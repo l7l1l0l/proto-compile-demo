@@ -1,0 +1,14 @@
+syntax="proto3";
+
+package simplest;
+
+option go_package="./simplestproto";
+
+message Info {
+	string name = 1;
+	uint32 age = 2;
+}
+
+message Data {
+	repeated Info list = 1;
+}

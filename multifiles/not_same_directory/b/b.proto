@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package testb;
+
+option go_package="./testbproto";
+
+import "a.proto";
+
+message Data {
+	repeated testa.Info list = 1;
+}

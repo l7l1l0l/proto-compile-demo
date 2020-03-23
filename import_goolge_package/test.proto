@@ -1,0 +1,14 @@
+syntax="proto3";
+
+package test;
+
+option go_package="./testproto";
+
+import "google/protobuf/any.proto";
+//你需要下载protoc对应版本的protobuf对应的文件到你的机器下面
+//在编译的时候 使用-I选项指定即可
+
+message Test {
+	google.protobuf.Any data = 1;
+}
+

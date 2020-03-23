@@ -1,0 +1,10 @@
+syntax="proto3";
+
+package testa;
+
+option go_package="./aproto";
+
+message Info {
+	string name = 1;
+	uint32 age = 2;
+}
